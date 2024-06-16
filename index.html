@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,width=device-width,target-densitydpi=medium-dpi">
+ <meta name="viewport" content="width=900">
+	<title>당신을 새기고 싶어요</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/ajax.googleapis.com_ajax_libs_jquery_1.11.2_jquery.min.js"></script>
+    <script src="js/kit.fontawesome.com_e40e15a830.js"></script>
+    <script type="text/javascript">
+		var col = 1;
+		var width = 120;
+	</script>
+    <script src="js/tistory2.daumcdn.net_tistory_2983190_skin_images_ygal.js"></script>
+    <script type="text/javascript">
+		$(document).ready(function() {
+			$('.pro-profiles1 img').click(function() {
+				$('.pro-profiles1 i').toggle('blind');
+			})
+			$('.pro-profiles2 img').click(function() {
+				$('.pro-profiles2 i').toggle('blind');
+			})
+			$('.episode-select-default').click(function() {
+				$('.episode-select > ul').slideToggle('blind');
+			})
+			$('#commentbutton').click(function() {
+				$('.comment').slideToggle('blind');
+			})
+		});
+
+	</script>
+</head>
+<body style="background-color: black;">
+    <s_t3>
+        <div id="center" >
+            
+            <div class="whole">
+                <div class="scene" style="background: linear-gradient(to bottom, transparent, [background-color:black]), url([##_image_##]);">
+                    <div class="search-wrap">
+                        <div class="search">
+                            <s_search>
+                                <input type="text" name="[##_search_name_##]" value="이런 저도 좋아해요?" onKeyPress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }" class="text" id="text" onkeyup="enterkey();" placeholder="그런 너도 좋아해서" />
+                            </s_search>
+                        </div>
+                        <div class="search-icon"><i class="fas fa-search"></i></div>
+                    </div>
+                    <div class="title" style="color: black">영원히 변하지 않는 <br> 우리들</div>
+                    <div class="running-time">
+                        <div class="rt1"></div><div class="rt2"></div>
+                        <div class="rt3">영원이라는 약속이 머무는 곳 2024.03.16~</div>
+                    </div>
+                    <div class="buttons">
+                        <a href="https://open.kakao.com/o/sdmSTbWf"><div class="play"><i class="fas fa-play"></i>입장</div></a>
+                       <a href="https://open.kakao.com/me/_green_light_T"> <div class="button"><i class="fas fa-plus"></i></div></a>
+                       
+                       <button id="btnWrap_open"><!--btnWrap 누르면 고양이 이미지 추가-->
+                         <div class="button" style="background-color: #535353;"><i class="far fa-thumbs-up"></i></div>
+                       </button><!--btnWrap_open end-->
+                       
+                       <button id="btnWrap_close"><!--누르면 고양이 이미지 삭제-->
+                       <div class="button" style="background-color: #535353;"><i class="far fa-thumbs-down"></i></div>
+                       </button><!--btnWrap_close-->
+                    </div>
+
+                    <script>
+
+                        $('#btnWrap_close').click(function(){
+                            $("#cat").hide()
+                        });
+
+                        
+
+                        $('#btnWrap_open').click(function(){
+                            $("#cat").show()
+                        });
+                    </script>
+
+                    <div id="cat">
+         
+
+                        <p class="five_cat">
+                            <img src="image/cat4.png" alt="귤 고양이 이미지" style="width: 200px;">
+                        </p>
+                                                
+                        <p class="seven_cat">
+                            <img src="image/cat9.png" alt="귤 고양이 이미지" style="width: 150px;">
+                        </p>
+                        
+                        <p class="eight_cat">
+                            <img src="image/cat5.png" alt="귤 고양이 이미지" style="width: 150px;">
+                        </p>
+
+                        <p id="cake_dog">
+                            <img src="image/cat6.png" alt="귤 고양이 이미지" style="width: 200px;">
+                        </p>
+
+                         
+                        <p class="ni_cat">
+                            <img src="image/cat7.png" alt="귤 고양이 이미지" style="width: 150px;">
+                        </p>
+          
+
+
+                    </div>
+
+
+
+                    <div class="header-info">
+                        <div class="info-left">
+                            <div class="info1">
+                               <p >"기분 좋아, 매튜."</p>
+                            <p >"확실한 건 넌 헷갈리게 굴지도 않고 내가 뭐라고 널 다 던져서까지 나한테 부딪쳐 오는데 그걸 밀어낼 수 있을리가 없지."</p>
+                            <p >"처음 봤을 때부터 넌 마음에 들었어."</p>
+                            <p>"나도 네 머리부터 발끝까지 씹어먹고 싶을 정도로 다 좋아한다."</p>
+                            <p>"그런 너도 좋아해"</p>
+                        </div>
+                            
+                        </div><div class="info-right">
+                            <p style="color: rgb(39, 207, 153)">"저도 많이 사랑해요. 덕분에 많이 행복해요."
+                            </p>
+                            <p>ㄴ 사랑은 이왕 내밀었으니 받아주마.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="select">
+                    <div class="episode">우리를 닮은 아이들</div><div class="episode-select-wrap">
+                </div>
+                <div class="container">
+                <s_list>
+                    <ol class="list-gallery">
+                        <s_list_rep>
+                            <li>
+                               
+                                    <div class="list-thumb">
+                                    <s_list_rep_thumbnail>
+                                        <img src="image/wlsrl_img.png">
+                                    </s_list_rep_thumbnail>
+                                    </div><div class="list-info">
+                                        <div class="info-setup">
+                                            <span class="list-title">진기(1개월+6일)</span><span class="list-date">햇감자종</span>
+                                        </div>
+                                        <div class="info-desc" style="line-height: 22px;">2024년 5월 12일. 진이 밥 먹고 나오는 중에 내 생각이 나서 뽑은 인형. 진의 말로는 나를 닮아서 말랑말랑하고 주무르는 맛이 있다고 한다.(나를 더 만져주면 좋을텐데....) 고추...가 있고, 사진에서 보여지는 것과 다르게 덩치가 있는 모양이다. 처음 입양하셨을 때는 가방에 잘 숨겨서 다닌다고 하셨으나 요즘은 달고 다니시는 것 같다.</div>
+                                    </div>
+                           
+                            </li>
+                        </s_list_rep>
+                    </ol>
+                </s_list>
+                <s_article_rep>
+                    <div class="contents">
+                        <div class="article-tags">
+                            <s_tag_label>
+                               <a href="https://www.youtube.com/watch?v=tPZIWRPHOro">Capybara - Capybara TikTok Song</a> 
+                            </s_tag_label>
+                        </div>
+
+			     <s_list>
+                            <ol class="list-gallery">
+                                <s_list_rep>
+                                    <li>
+                                  
+                                            <div class="list-thumb">
+                                            <s_list_rep_thumbnail>
+                                                <img src="image/aorl_img.png">
+                                            </s_list_rep_thumbnail>
+                                            </div><div class="list-info">
+                                                <div class="info-setup">
+                                                    <span class="list-title">명기(0개월+19일)</span><span class="list-date">고양이종</span>
+                                                </div>
+                                                <div class="info-desc" style="line-height: 22px;">2024년 5월 29일에 입양 된 진을 닮은 진기. 고양이는 얼굴이 넙적할 수록 미남이라는데 우리 진기만큼 미남인 고양이는 없을 거다. 진을 닮아 용맹한 얼굴과 사랑스러운 눈동자를 가지고 있다. 진한테 아직 말하진 않았지만... 엉덩이 부근에 (*)모양으로 구멍이 있어서, 꼭 항문 같다.</div>
+                                            </div>
+                           
+                                    </li>
+                                </s_list_rep>
+                            </ol>
+                        </s_list>
+
+                        <div class="article-tags">
+                            <s_tag_label>
+                               <a href="https://www.youtube.com/watch?v=pdAAm3NepH0">꽁꽁 얼어붙은 한강 위로 고양이 리믹스</a> 
+                            </s_tag_label>
+                        </div>
+
+
+                        <div style="height: 40px;"></div>
+                        <div class="article_content">DAY6(데이식스) "Sweet Chaos" M/V</div>
+                        <div class="article-rt"><div class="article-bar1"></div><div class="article-bar2"></div><div class="article-date">4분02초</div></div>
+                        <div class="article-setup">
+                            <div class="article-setup-left">
+                                <s_ad_div><a href="https://www.youtube.com/watch?v=CWUGikRxGQs" onclick="[##_s_ad_m_onclick_##]"><i class="fas fa-pause"></i></a>
+                                <i class="fas fa-volume-up"></i></s_ad_div>
+                               
+                            </div><div class="article-setup-right">
+                                            <i class="fas fa-comment-alt" id="commentbutton"></i>
+                                            <i class="fas fa-expand" style="margin-left: 20px;"></i>
+                                        </div>
+                        </div>
+                        <s_rp>
+                            <div class="comment">
+                            <s_rp_container>
+                                <div class="commentlist">
+                                    <ol>
+                                    <s_rp_rep>
+                                        <li id='[##_rp_rep_id_##]'>
+                                        <div id="comment-body" class="[##_rp_rep_class_##]">
+                                            <div class="comment-img"><img src="image/jin.png"></div><div class="comment-right">
+                                            <span class="comment-name">진청우</span>
+                                            <span class="comment-date">@sdmSTbWf</span>
+                                            <i class="fas fa-user-edit"></i>
+                                            <i class="fas fa-reply"></i>
+                                            <div class="comment-desc">사랑고백이라고는 할 줄 모르는 놈이 부르는 노래지. 내 인생 흔들었으면 책임지라고 자존심은 다 세우면서 협박하는 어설픈 놈이다.너도 책임져라.</div>
+                    </div>
+                                        </div>
+                                        <s_rp2_container>
+                                            <ul>
+                                            <s_rp2_rep>
+                                                <li id='[##_rp_rep_id_##]'>
+                                                    <div id="comment-body2" class="[##_rp_rep_class_##]">
+                                                    <div class="comment-img"><img src="image/mtt.png"></div><div class="comment-right">
+                                                                    <span class="comment-name">Matthew</span>
+                                                                    <span class="comment-date">@_green_light_T</span>
+                                                                   <i class="fas fa-user-edit"></i>
+                                                                    <div class="comment-desc">당신 없으면 못 사는 몸으로 만드셨으니까… 당신도 부디 책임져주시길 바라요.</div>
+                                                            </div>
+                                                    </div>
+                                                </li>
+                                            </s_rp2_rep>
+                                            </ul>
+                                        </s_rp2_container>
+                                        </li>
+                                    </s_rp_rep>
+                            
+                                    </ol>
+                                </div>
+                            </s_rp_container>
+                            <s_rp_input_form>
+                                <div class="commentwrite">
+                                <s_rp_member>
+                                <s_rp_guest>
+                                    <div class="guest"><input type="text" name="[##_rp_input_name_##]" class="input" placeholder="이름" /><input type="password" maxlength="20" name="[##_rp_input_password_##]" class="input" placeholder="암호" /></div>
+                                </s_rp_guest>
+                                </s_rp_member>
+                                <div class="commentwrite-body"><textarea name="[##_rp_input_comment_##]">추가적인 코멘트가 있으시면 말씀해 주세요. 언제든 추가해 둘게요.</textarea></div>
+                                <div class="commentwrite-input"><input type="checkbox" class="checkbox" id="secret" name="secret" /><label for="secret">잠금</label><input type="submit" value="등록" onclick="[##_rp_onclick_submit_##]"/></div>
+                                </div>
+                            </s_rp_input_form>
+                            </div>
+                        </s_rp>
+                    </div>
+                    <s_notice_rep>
+                        <div class="notice">
+                        <div class="article">
+
+                        </div>
+                        </div>
+                    </s_notice_rep>
+                    </s_article_rep>
+                    
+                    <s_article_protected>
+                        <div class="protected">
+                            <div class="pro-desc">어떤 기억조각들</div>
+                            <div class="pro-profiles">
+                                <div class="pro-profiles1"><a href="letter.html">
+                                    <img src="image/one_fn.jpg">네코미미 10살 연하 메이드라도 사랑을 할 수 있을까요?<i class="fas fa-user-check"></i></div><div class="pro-profiles2"><img src="image/two_fn.jpg">10초 뒤 당신은 사랑에 빠지게 됩니다. 네? 벌써 사랑하신다고요?<i class="fas fa-user-check"></i></div><div class="pro-profiles3"><div class="pro-profiles4"><i class="fas fa-plus-circle"></i></div>그런 당신을 위한 선물이에요.</div>
+                                </a>
+                                </div>
+                            <div class="pro-pass">
+                                <input type="password" class="conf" maxlength="16" id="[##_article_password_##]" name="[##_article_password_##]" onkeydown="if (event.keyCode == 13) [##_article_dissolve_##]" placeholder="비밀번호"/>
+                            </div>
+                        </div>
+                    </s_article_protected>
+                    
+                  
+                </div>
+                <div class="copy"><a href="https://thelabors.tistory.com" target="_blank">GongPyeong Design © 2021_  
+                    <p>*개인적 용도의 사용을 위하여 일부 코딩 코드를 수정.</p>
+                </a>
+              </div>
+               
+            </div>
+            
+        </div id="center">
+        </s_t3>
+</body>
+</html>
